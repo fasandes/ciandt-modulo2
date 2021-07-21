@@ -2,14 +2,17 @@ package com.fsandes.vo;
 
 import com.fsandes.enums.Cor;
 
-public class Figura {
+//o que é uma figura geometrica
+public abstract class FormaGeometrica {
 
 	private Cor cor;
 
-	public Figura(final Cor cor) {
+
+	public FormaGeometrica(final Cor cor) {
 
 		this.cor = cor;
 	}
+
 
 	public Cor getCor() {
 
@@ -20,4 +23,8 @@ public class Figura {
 
 		this.cor = cor;
 	}
+
+	public abstract Double calculaArea();
+
+	public abstract String getNome();
 }
