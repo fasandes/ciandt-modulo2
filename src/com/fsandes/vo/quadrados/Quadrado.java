@@ -1,13 +1,20 @@
-package com.fsandes.vo;
+package com.fsandes.vo.quadrados;
 
 import com.fsandes.enums.Cor;
+import com.fsandes.exceptions.LadoNegativo;
+import com.fsandes.vo.FormaGeometrica;
 
 public class Quadrado extends FormaGeometrica {
 	private Double lado;
+	private Lado ladoInnerClass;
 	private final String nome = "Quadrado";
 
-	public Quadrado(Cor cor, Double lado){
+	public Quadrado(Cor cor, Double lado) throws LadoNegativo {
 		super(cor);
+		if (lado < 0) {
+				throw new LadoNegativo();
+
+		}
 		this.lado = lado;
 	}
 
@@ -22,4 +29,5 @@ public class Quadrado extends FormaGeometrica {
 
 		return nome;
 	}
+
 }

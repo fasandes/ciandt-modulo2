@@ -3,12 +3,14 @@ package com.fsandes.vo;
 import com.fsandes.enums.Cor;
 
 //o que é uma figura geometrica
-public abstract class FormaGeometrica {
+public abstract class FormaGeometrica  {
 
 	private Cor cor;
 
 
 	public FormaGeometrica(final Cor cor) {
+		String a = cor.hexadecimal;
+		String b = Cor.BLUE.hexadecimal;
 
 		this.cor = cor;
 	}
@@ -27,4 +29,7 @@ public abstract class FormaGeometrica {
 	public abstract Double calculaArea();
 
 	public abstract String getNome();
+
+
+
 }

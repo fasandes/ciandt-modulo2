@@ -1,6 +1,7 @@
 package com.fsandes.vo;
 
 import com.fsandes.enums.Cor;
+import com.fsandes.vo.quadrados.Quadrado;
 
 public class Triangulo extends FormaGeometrica {
 	private Double base;
