@@ -14,9 +14,6 @@ public class Triangulo extends FormaGeometrica {
 		this.altura = altura;
 	}
 
-//	public float getArea() {
-//		return (base * altura) / 2;
-//	}
 
 	public Double calculaArea(){
 		return (base * altura) / 2;

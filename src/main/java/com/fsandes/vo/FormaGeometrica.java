@@ -7,6 +7,9 @@ public abstract class FormaGeometrica  {
 
 	private Cor cor;
 
+	public FormaGeometrica() {
+
+	}
 
 	public FormaGeometrica(final Cor cor) {
 		String a = cor.hexadecimal;

@@ -6,8 +6,11 @@ import com.fsandes.vo.FormaGeometrica;
 
 public class Quadrado extends FormaGeometrica {
 	private Double lado;
-	private Lado ladoInnerClass;
 	private final String nome = "Quadrado";
+
+	public Quadrado() {
+
+	}
 
 	public Quadrado(Cor cor, Double lado) throws LadoNegativo {
 		super(cor);
@@ -30,4 +33,13 @@ public class Quadrado extends FormaGeometrica {
 		return nome;
 	}
 
+	public Double getLado() {
+
+		return lado;
+	}
+
+	public void setLado(final Double lado) {
+
+		this.lado = lado;
+	}
 }
