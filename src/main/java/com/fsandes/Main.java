@@ -13,9 +13,10 @@ public class Main {
 	public static void main(String[] args) {
 
 		List<Executavel> executaveis = new ArrayList<>();
-//		executaveis.add(new Aula1());
-//		executaveis.add(new Aula2());
+		executaveis.add(new Aula1());
+		executaveis.add(new Aula2());
 		executaveis.add(new Aula4());
+//		executaveis.add(new Aula5());
 
 		for (Executavel exec : executaveis) {
 			exec.executar();
