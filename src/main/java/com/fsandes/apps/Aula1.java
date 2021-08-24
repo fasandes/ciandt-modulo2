@@ -9,6 +9,7 @@ import com.fsandes.vo.FormaGeometrica;
 import com.fsandes.vo.Triangulo;
 import com.fsandes.vo.quadrados.Quadrado;
 
+//faz sentido pra mim
 public class Aula1 implements Executavel{
 
 	@Override
