@@ -9,6 +9,7 @@ import com.fsandes.apps.Aula1;
 import com.fsandes.apps.Aula2;
 import com.fsandes.apps.Aula4;
 import com.fsandes.apps.Aula5;
+import com.fsandes.apps.Aula6;
 import com.fsandes.apps.Executavel;
 import com.fsandes.enums.Cor;
 import com.fsandes.vo.FormaGeometrica;
@@ -27,7 +28,8 @@ public class Main {
 //		executaveis.add(new Aula4());
 		long startTime = System.nanoTime();
 
-		executaveis.add(new Aula5());
+//		executaveis.add(new Aula5());
+		executaveis.add(new Aula6());
 
 		for (Executavel exec : executaveis) {
 			exec.executar();
